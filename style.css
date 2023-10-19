@@ -1,0 +1,700 @@
+@import url(./fonts//futura-pt/stylesheet.css);
+
+*{
+  /* outline: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  transition: 300ms ease-in-out;
+}
+
+a:hover{
+  opacity: 0.7;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #EFEFEF;
+  overflow-x: hidden;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 0.41666666666vw;
+  margin-bottom: 0.67708333333vw;
+}
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 22.5vw;
+  height: 7.39583333333vw;
+  position: relative;
+  bottom: 0.20833333333vw;
+  margin-left: 7.29166666667vw;
+}
+
+.logo__image{
+  width: 2.03125vw;
+  height: 2.29166666667vw;
+  margin-right: 0.3125vw;
+}
+
+.logo__title{
+  color: #494949;
+  font-family: Futura PT;
+  font-size: 2.86458333333vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 0.41666666666vw;
+}
+
+.logo__title_green{
+  color: #29BC1C;
+}
+
+.logo__utka{
+  border-bottom-left-radius: 2.08333333333vw;
+  border-bottom-right-radius: 2.08333333333vw;
+  position: relative;
+  left: 1.35416666667vw;
+  top: 0.625vw;
+  height: 7.39583333333vw;
+  width: 4.84375vw;
+}
+
+.header__links{
+  display: flex;
+  margin-left: auto;
+  gap: 1.61458333333vw;
+}
+
+.header__link{
+  color: #ED860E;
+  font-family: Futura PT;
+  font-size: 1.51041666667vw;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  letter-spacing: -0.0453125vw;
+  text-decoration: none;
+}
+
+.header__links-social{
+  display: flex;
+  gap: 1.45833333333vw;
+  margin-left: 4.0625vw;
+  margin-right: 7.29166666667vw;
+}
+
+.header__link-social{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header__link-social_telegram{
+  width: 1.82291666667vw;
+  height: 1.51041666667vw;
+  background-image: url(./image/tel.png);
+}
+
+.header__link-social_discord{
+  width: 1.35416666667vw;
+  height: 1.61458333333vw;
+  background-image: url(./image/ds.png);
+}
+
+.header__link-social_vk{
+  width: 2.70833333333vw;
+  height: 1.51041666667vw;
+  background-image: url(./image/vk.png);
+}
+
+.header__link-social_youtube{
+  width: 2.13541666667vw;
+  height: 1.51041666667vw;
+  background-image: url(./image/yt.png);
+}
+
+.content{
+  width: 100vw;
+}
+
+.about-me{
+  position: relative;
+  width: 100%;
+  height: 36.9791666667vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8.02083333333vw;
+}
+
+.dirt-left{
+  position: absolute;
+  right: -0.98958333333vw;
+  top: 1.5625vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 10.4166666667vw;
+  height: 9.375vw;
+  background-image: url(./image//dirt\ 2.png);
+}
+
+.dirt-right{
+  position: absolute;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 15.625vw;
+  left: -1.25vw;
+  height: 13.125vw;
+  background-image: url(./image//dirt\ 1.png);
+}
+
+.bg-row{
+  position: absolute;
+  top: 15.3125vw;
+  height: 7.23958333333vw;
+  width: 100%;
+  background-color: #E7E7E7;
+}
+
+.about-me__info{
+  position: relative;
+  top: 12.0833333333vw;
+  display: flex;
+  height: 21.1458333333vw;
+}
+
+.info__avatar{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 13.0208333333vw;
+  height: 15vw;
+  border-radius: 1.61458333333vw;
+  background-color: #00BC55;
+  margin-right: 1.45833333333vw;
+}
+
+.info__avatar::before{
+  position: absolute;
+  z-index: -1;
+  bottom: 1.25vw;
+  content: " ";
+  width: 13.0208333333vw;
+  height: 15vw;
+  border-radius: 1.61458333333vw;
+  background-color: #FFB155;
+}
+
+.info__avatar::after{
+  position: absolute;
+  content: " ";
+  left: 2.65625vw;
+  top: -3.75vw;
+  width: 7.55208333333vw;
+  height: 7.55208333333vw;
+  border-radius: 50%;
+  background-image: url(./image/utka.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info__name{
+  z-index: 1;
+  color: #FFF;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 2.13541666667vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 5.72916666667vw;
+}
+
+.info__role{
+  z-index: 1;
+  color: #494949;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 1.51041666667vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -0.52083333333vw;
+}
+
+.info__more{
+  position: relative;
+  bottom: 1.61458333333vw;
+  width: 50.6770833333vw;
+  height: 16.7708333333vw;
+  border-radius: 1.61458333333vw;
+  background-color: #E4E4E4;
+  padding:  2.23958333333vw 3.02083333333vw;
+}
+
+.more__article{
+  color: #686868;
+  font-family: Futura PT;
+  font-size: 1.51041666667vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.82291666667vw; /* 120.69% */
+  width: 27.8645833333vw;
+  margin-bottom: 1.875vw;
+}
+
+.more__what-do{
+  color: #686868;
+  font-family: Futura PT;
+  font-size: 1.51041666667vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.82291666667vw; /* 120.69% */
+  margin-bottom: 0.46875vw;
+}
+
+.more__techs{
+  display: flex;
+  gap: 0.52083333333vw;
+}
+
+.more__tech{
+  color: #535353;
+  font-family: Futura PT;
+  font-size: 1.09375vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.82291666667vw; /* 166.667% */
+  padding-left: 0.41666666666vw;
+  padding-right: 0.41666666666vw;
+  background-color: #CCC;
+}
+
+.info__links{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 14.2708333333vw;
+  height: 16.6145833333vw;
+  border-radius: 1.61458333333vw;
+  background-color: #656565;
+  margin-right: 1.45833333333vw;
+  right: 0.3125vw;
+  top: -0.52083333333vw;
+  padding-left: 1.25vw;
+  padding-right: 1.25vw;
+  padding-top: 3.125vw;
+  gap: 0.67708333333vw;
+  z-index: 10;
+}
+
+.info__links::before{
+  position: absolute;
+  bottom: -1.25vw;
+  z-index: -1;
+  content: " ";
+  width: 14.2708333333vw;
+  height: 16.6145833333vw;
+  border-radius: 1.61458333333vw;
+  background-color: #484848;
+}
+
+.info__link{
+  color: #FFF;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 1.51041666667vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 11.8229166667vw;
+  height: 2.1875vw;
+  padding-left: 2.08333333333vw;
+  background-color: #595959;
+  text-decoration: none;
+}
+
+.info__link_vk{
+  background-image: url(./image/Слой\ 2.png);
+  background-repeat: no-repeat;
+  background-size:  1.5625vw 0.88541666666vw;
+  background-position:  1.92708333333vw 0.52083333333vw;
+}
+
+.info__link_tel{
+  background-image: url(./image/telegram.png);
+  background-repeat: no-repeat;
+  background-size: 1.30208333333vw 1.09375vw;
+  background-position: 2.03125vw  0.46875vw;
+}
+
+.info__link_steam{
+  background-image: url(./image/pngegg\ 2.png);
+  background-repeat: no-repeat;
+  background-size: 1.14583333333vw 1.14583333333vw;
+  background-position: 2.23958333333vw 0.52083333333vw;
+}
+
+.info__link_ds{
+  background-image: url(./image/discord.png);
+  background-repeat: no-repeat;
+  background-size: 1.14583333333vw 1.14583333333vw;
+  background-position: 2.08333333333vw 0.67708333333vw;
+}
+
+.info__official{
+  margin-top: 0.05208333333vw;
+  color: #DBDBDB;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 1.51041666667vw;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+
+.sales{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.64583333333vw;
+}
+
+.bg2-row{
+  position: absolute;
+  background: rgba(115, 171, 255, 0.18);
+  width: 45vw;
+  height: 7.23958333333vw;
+  left: 0;
+  z-index: -1;
+  top: 6.40625vw;
+}
+
+.sales__image{
+  width: 36.8229166667vw;
+  height: 23.3854166667vw;
+  border-radius: 2.1875vw;
+  box-shadow: 0px 0.15625vw 0.3125vw 0px rgba(0, 0, 0, 0.06);
+  margin-right: 2.70833333333vw;
+}
+
+.sales__about{
+  width: 31.3541666667vw;
+}
+
+.sales__title{
+  color: #4D4D4D;
+  font-family: Futura PT;
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 0.625vw;
+  margin-bottom: 2.34375vw;
+}
+
+.sales__list{
+  color: #4D4D4D;
+  font-family: Futura PT;
+  font-size: 1.77083333333vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.66666666667vw; /* 94.118% */
+  margin-bottom: 2.1875vw;
+}
+
+.list__element{
+  padding: 0;
+  padding-left: 2.34375vw;
+  margin: 0;
+  background-image: url(./image/check.png);
+  background-repeat: no-repeat;
+  background-size: 1.40625vw 1.35416666667vw;
+  background-position: 0 50%;
+  margin-bottom: 1.04166666667vw;
+}
+
+.list__element::marker{
+  content: "";
+}
+
+.sales__price{
+  color: #858585;
+  font-family: Futura PT;
+  font-size: 2.1875vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.82291666667vw; /* 83.333% */
+  text-decoration-line: underline;
+  margin-bottom: 0.52083333333vw;
+}
+
+.sales__subtitle{
+  color: #858585;
+  font-family: Futura PT;
+  font-size: 1.45833333333vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.82291666667vw; /* 125% */
+}
+
+.message-me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8.95833333333vw;
+}
+
+.message-me__title{
+  color: #696969;
+  font-family: Futura PT;
+  font-size: 2.1875vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.82291666667vw; /* 83.333% */
+  margin-bottom: 2.08333333333vw;
+}
+
+.message-me__links{
+  display: flex;
+  gap: 1.09375vw;
+}
+
+.message-me__link{
+  height: 3.125vw;
+  border-radius: 0.36458333333vw;
+  color: #FFF;
+  font-family: Futura PT;
+  font-size: 2.1875vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.82291666667vw; /* 83.333% */
+  text-decoration: none;
+  box-shadow: 0px 0.15625vw 0.3125vw 0px rgba(0, 0, 0, 0.06);
+}
+
+.message-me__link_ds{
+  width: 18.4895833333vw;
+  background-color: #8C93F1;
+  padding: 0.67708333333vw 1.82291666667vw 0.625vw 3.90625vw;
+  background-image: url(./image/disk.png);
+  background-repeat: no-repeat;
+  background-size: 1.66666666667vw 1.92708333333vw;
+  background-position: 1.82291666667vw 0.67708333333vw;
+}
+
+.message-me__link_tel{
+  width: 16.9270833333vw;
+  background-color: #34BBFF;
+  padding: 0.67708333333vw 1.45833333333vw 0.625vw 3.90625vw;
+  background-image: url(./image/tele.png);
+  background-repeat: no-repeat;
+  background-size: 2.03125vw 1.82291666667vw;
+  background-position: 1.45833333333vw 0.67708333333vw;
+}
+
+.message-me__link_vk{
+  width: 16.3020833333vw;
+  background-color: #6BABE5;
+  padding: 0.67708333333vw 1.66666666667vw 0.625vw 4.73958333333vw;
+  background-image: url(./image/vkk.png);
+  background-repeat: no-repeat;
+  background-size: 2.65625vw 1.51041666667vw;
+  background-position: 1.5625vw 0.88541666666vw;
+}
+
+.service{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7.60416666667vw;
+  overflow-x: hidden;
+}
+
+.service_lyapis{
+  background: linear-gradient(94deg, rgba(60, 171, 217, 0.90) 1.43%, rgba(42, 214, 197, 0.90) 108.67%), #000;
+}
+
+.service__title{
+  color: #FFF;
+  font-family: Futura PT;
+  font-size: 2.96875vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.8125vw; /* 94.737% */
+  margin-left: 13.1770833333vw;
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+
+.service__subtitle{
+  color: #FFF;
+  font-family: Futura PT;
+  font-size: 1.92708333333vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8125vw; /* 145.946% */
+  margin-left: 13.1770833333vw;
+  align-self: flex-start;
+  margin-bottom: 3.125vw;
+}
+
+.service__cards{
+  display: grid;
+  column-gap: 1.35416666667vw;
+  row-gap: 1.51041666667vw;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 5.20833333333vw;
+}
+
+.card{
+  width: 22.7604166667vw;
+  height: 18.1770833333vw;
+}
+
+.card__image{
+  width: 22.7604166667vw;
+  height: 15.15625vw;
+  border-radius: 1.61458333333vw;
+  box-shadow: 0px 0.15625vw 0.3125vw 0px rgba(0, 0, 0, 0.06);
+}
+
+.card__price{
+  color: #FFF;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 1.25vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.8125vw; /* 225% */
+}
+
+.service_me{
+  background: linear-gradient(94deg, rgba(60, 217, 160, 0.90) 1.43%, rgba(42, 214, 121, 0.90) 108.67%), #000;
+  margin-bottom: 2.08333333333vw;
+}
+
+.gp-r{
+  position: absolute;
+  color: #FFF;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 10.2604166667vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8125vw; /* 27.411% */
+  transform: rotate(33.815deg);
+  filter: blur(0.26041666666vw);
+  bottom: 15.625vw;
+  left: -5.20833333333vw;
+}
+
+.gp-l{
+  transform: rotate(-30deg);
+  color: #FFF;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 10.2604166667vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8125vw; /* 27.411% */
+  filter: blur(0.625vw);
+  position: absolute;
+  top: 15.625vw;
+  right: -5.20833333333vw;
+}
+
+.service .message-me__title{
+  color: #FFFFFF;
+}
+
+.service_me .service__cards{
+  margin-bottom: 7.96875vw;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4.16666666667vw;
+}
+
+.lyapis{
+  width: 7.23958333333vw;
+  height: 4.375vw;
+  position: relative;
+  border-left: 0.26041666666vw solid #AEAEAE;
+  padding-left: 1.92708333333vw;
+  position: relative;
+  top: 1.30208333333vw;
+  right: 5.72916666667vw;
+}
+
+.footer__links{
+  display: flex;
+  gap: 1.77083333333vw;
+  margin-bottom: 3.48958333333vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__link{
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer__link_tel{
+  width: 2.03125vw;
+  height: 1.71875vw;
+  background-image: url(./image/tele.png);
+  filter: brightness(30) contrast(0);
+}
+
+.footer__link_vk{
+  width: 2.5vw;
+  height: 1.40625vw;
+  background-image: url(./image/vkk.png);
+  filter: brightness(30) contrast(0);
+}
+
+.footer__link_ds{
+  width: 1.875vw;
+  height: 2.13541666667vw;
+  background-image: url(./image/disk.png);
+  filter: brightness(30) contrast(0);
+}
+
+.footer__link_yt{
+  width: 2.44791666667vw;
+  height: 1.71875vw;
+  background-image: url(./image/yt.png);
+  filter: brightness(30) contrast(0);
+}
