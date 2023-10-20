@@ -647,7 +647,7 @@ body{
 }
 
 .lyapis{
-  width: 7.23958333333vw;
+  /* width: 7.23958333333vw; */
   height: 4.375vw;
   position: relative;
   border-left: 0.26041666666vw solid #AEAEAE;
